@@ -1,5 +1,90 @@
+*{
+    border: 2px solid green;
+}
+
+
+
 body{
     background-color: #f6f6f6;
+}
+
+.secao-01{
+   display: flex;
+   flex-direction: column;
+
+   align-items: center;
+   padding: 10px 0px 120px 0px;
+
+   background-color: #404eed;
+   background-image: url(../../assets/imagens/fundo.svg.svg);
+   background-size: cover;
+   color: #fff;
+}
+
+.s1-cabecalho{
+    display: flex;
+    flex-direction: row ;
+
+    justify-content: space-between;
+    align-items: center;
+    width: 1280px;
+
+    margin-bottom: 140px;
+
+}
+
+
+.secao-01 > h1{
+    font: 56px "Discord2";
+    width: 500px;
+    text-align: center;
+    line-height: 45px;
+
+    margin-bottom: 50px;
+}
+
+.secao-01 > p{
+    font: 20px "discord1";
+    width: 780px;
+    text-align: center;
+    line-height: 32px;
+
+    margin-bottom: 30px;
+
+}
+
+.s1-menu{
+    display: flex;
+    flex-direction:row;
+    
+
+}
+
+.s1-botoes{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.s1-botao-escuro{
+    background-color:#23272a !important;
+    color: #fff !important;
+}
+
+.s1-botoes > a {
+    font: 20px "discord1";
+    background-color: #fff;
+    color: #23272a;
+    padding: 10px 30px;
+    border-radius: 30px ;
+    margin: 0px 10px;
+
+    display: flex;
+    align-items: center;
+}
+
+.s1-botoes > a > svg {
+    margin-right: 10px;
 }
 
 
