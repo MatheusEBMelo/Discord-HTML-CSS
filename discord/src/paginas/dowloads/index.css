@@ -350,8 +350,9 @@ li{
     
 }
 
-.ul:hover{
+li:hover{
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .li-titulo{
@@ -362,7 +363,6 @@ li{
 .footer-part1{
     display: flex;
 }
-
 
 
 
@@ -396,8 +396,6 @@ li{
     margin-right:20px;
 }
 
-.icon
-
 
 .footer-part2{
     display: flex;
@@ -406,6 +404,8 @@ li{
     margin-top: 50px;
     padding-top: 20px;
     border-top: solid #5865f2 1px;
+    color: #ffffff;
+    
 }
 
 .button-registrar{
