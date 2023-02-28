@@ -1,9 +1,3 @@
-*{
-    border: 2px solid green;
-}
-
-
-
 body{
     background-color: #f6f6f6;
 }
@@ -13,24 +7,81 @@ body{
    flex-direction: column;
 
    align-items: center;
-   padding: 10px 0px 120px 0px;
+   padding: 25px 0px 120px 0px;
 
    background-color: #404eed;
    background-image: url(../../assets/imagens/fundo.svg.svg);
    background-size: cover;
+   background-position: -400px 0px;
    color: #fff;
+
+   position: relative;
+   overflow: hidden;
 }
 
-.s1-cabecalho{
+.secao-01 a {
+    cursor: pointer;
+}
+
+.s1-tenis{
+  position: absolute;
+  bottom: 0px;
+  left: -270px;
+}
+
+.s1-suco {
+  position: absolute;
+  bottom: 0px;
+  right: -230px;
+}
+
+header{
+    background-color: #404eed;
+    width: 100%;
+   
+    padding-top: 10px;
     display: flex;
-    flex-direction: row ;
-
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 1280px;
+    gap: 175px;
 
-    margin-bottom: 140px;
+    margin-bottom: 100px;
+    
 
+}
+
+.links-header{
+    display: flex;
+    gap: 35px;
+    color: #fff;
+    font: 14px "Discord3";
+
+}
+
+.link-header:hover{
+    text-decoration: underline;
+    
+}
+
+.button-login{
+    background-color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+  
+   
+}
+
+.button-login:hover{
+    color: #404eed;
+}
+
+.logo{
+    width: 140px;
+    height: 65px;
 }
 
 
@@ -60,6 +111,15 @@ body{
 
 }
 
+.s1-menu > a {
+   font: 16 px "discord5";
+   margin: 5px 20px;
+}
+
+.s1-menu > a:hover {
+    text-decoration: underline;
+}
+
 .s1-botoes{
     display: flex;
     flex-direction: row;
@@ -71,16 +131,26 @@ body{
     color: #fff !important;
 }
 
+.s1-botao-escuro:hover {
+    background-color: rgb(60 60 60) !important;
+}
+
 .s1-botoes > a {
     font: 20px "discord1";
     background-color: #fff;
     color: #23272a;
-    padding: 10px 30px;
+    padding: 16px 30px;
     border-radius: 30px ;
     margin: 0px 10px;
 
     display: flex;
     align-items: center;
+
+    transition: 0.5s;
+}
+.s1-botoes > a:hover {
+   box-shadow: 0px 8px 15px rgb(0 0 0 / 20%);
+   color: #5865f2;
 }
 
 .s1-botoes > a > svg {
@@ -98,10 +168,6 @@ body{
     background-color: #fff;
 }
 
-.secao-02 > img {
-
-}
-
 .s2-textos{
      display: flex;
      flex-direction: column;
@@ -110,18 +176,245 @@ body{
 }
 
 .s2-textos h1{
-     font: 50px Discord5;
+     font: 50px "Discord5";
      color: #000;
      line-height: 60px;
      margin-bottom: 20px;
 }
 
 .s2-textos p{
-    font: 20px Discord4;
+    font: 20px "Discord4";
     color: #000;
     line-height: 32px;
 }
 
 .secao-02 > * {
     margin: 0px 50px;
+}
+
+.secao-03{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    padding: 110px 0px;
+    background-color: #ffffff3e;
+    
+}
+
+.s3-textos{
+     display: flex;
+     flex-direction: column;
+
+     width: 370px;
+}
+
+.s3-textos h1{
+     font: 50px "Discord5";
+     color: #000;
+     line-height: 60px;
+     margin-bottom: 20px;
+}
+
+.s3-textos p{
+    font: 20px "Discord4";
+    color: #000;
+    line-height: 32px;
+}
+
+.secao-03 > * {
+    margin: 0px 50px;
+}
+
+.secao-04{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    padding: 110px 0px;
+    background-color: #fff;
+    
+}
+
+.s4-textos{
+     display: flex;
+     flex-direction: column;
+
+     width: 370px;
+}
+
+.s4-textos h1{
+     font: 50px "Discord5";
+     color: #000;
+     line-height: 60px;
+     margin-bottom: 20px;
+}
+
+.s4-textos p{
+    font: 20px Discord4;
+    color: #000;
+    line-height: 32px;
+}
+
+.secao-04 > * {
+    margin: 0px 50px;
+}
+
+.secao-5{
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #f6f6f6;
+    padding-bottom: 100px;
+}
+
+.img-s5{
+    width: 90%;
+    
+}
+
+.text-s5{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.titulo-s5{
+    font: 40px "Discord2";
+     color: #000;
+     line-height: 60px;
+     margin-bottom: 20px;
+}
+
+.p-s5{
+    font: 45px "Discord4";
+    width: 900px;
+    color: #000;
+    line-height: 30px;
+    font-size: 18px;
+
+}
+
+.p2-s5{
+    font: 25px "Discord5";
+    margin-bottom: 35px;
+}
+
+
+.s5-botao{
+    font: 20px "discord1";
+    background-color: #3e35f4;
+    color: #f9fbfd;
+    padding: 16px 30px;
+    border-radius: 30px ;
+    margin: 0px 10px;
+
+    display: flex;
+    align-items: center;
+
+    transition: 0.5s;
+}
+
+.s5-botao:hover{
+    background-color:#3e35f4 !important;
+    color:#f9fbfd !important;
+
+    background-color: rgb(196, 190, 212) !important;
+}
+
+footer{
+    background-color: #23272a;
+    padding-top: 90px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 40px;
+}
+
+ul{
+    margin-left: 80px;
+}
+
+li{
+    color: #ffffff;
+    margin-bottom: 10px;
+    list-style: none;
+    
+}
+
+.ul:hover{
+    text-decoration: underline;
+}
+
+.li-titulo{
+    color: #5865f2;
+}
+
+
+.footer-part1{
+    display: flex;
+}
+
+
+
+
+.footer-titulo{
+    color: #5865f2;
+    font: 32px "Discord2";
+    width: 350px;
+}
+
+.footer-p{
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.footer-div-p{
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.icon-brasil{
+    width: 24px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+.social-icon{
+    width: 24px;
+    height: 24px;
+    margin-right:20px;
+}
+
+.icon
+
+
+.footer-part2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: solid #5865f2 1px;
+}
+
+.button-registrar{
+    background-color: #5865f2;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
